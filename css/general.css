@@ -1,0 +1,69 @@
+/* CSS Document */
+
+/*CSS is structured as follows:
+
+selector {
+    property: value;
+    property: value;
+    property: value
+}
+
+Each selector is paired with, and styles, an element. For example:
+html {} is paired with and styles <html>
+*/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+    /*font-family = next best available font */
+body{
+    background-color:#ccc;
+}
+
+ /*RGB colour space, look for code in photoshop web colors*/
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    font-weight:normal;
+}
+/* 1rem = 16pixels (default body copy size, therefore good base number)
+    1.5rem= 24pixels (perfect leading for default font size) */
+
+p, li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h1 + p { /* only styles the first paragraph after the heading */
+    font-size: 1.5rem;
+    line-height: 1.75rem
+}
+
+strong { /* this is default, but just to demonstrate the amount of control in CSS */
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+hr {
+    border: solid 4px #F00;
+}
+
+ul, ol {
+    background-color: #FFF;
+}
+  
+li {
+    color: #F00
+}
+
+ol li:first-child {
+    background-color: #000;
+}
+   
+ol li:last-child {
+    background-color: #F90;
+}
